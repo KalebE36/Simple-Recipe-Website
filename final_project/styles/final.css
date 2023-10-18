@@ -1,0 +1,258 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+body {
+	margin: 0 auto;
+	width: 100%;
+	max-width:1200px;
+	border: 1px solid brown;
+	border-radius: 15px;
+	box-shadow: 0px 0px 30px orange;
+}
+
+html {
+	background-color: #D2B48C;
+	font-size: 16px;
+	font-family: "Times New Roman", serif;
+}
+
+
+
+
+
+/* body styles */
+
+
+
+
+/* body header styles */
+
+body header {
+	border-bottom: 1px solid brown;
+}
+
+#headerlogo {
+	padding: 1em 1em 0em 2em;
+	border-right: 1px solid brown;
+}
+
+body header h1 {
+	float: right;
+	font-size: 280%;
+	padding: .5em 7.8em 0 0;
+	font-family: "Lucida Handwriting", cursive;
+	position: relative;
+
+
+}
+
+
+
+/* navbar styles */
+
+#mobile_menu {
+	display:none;
+}
+
+
+#navbar a.current {
+	color: black;
+}
+
+
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#navbar ul li {
+	float: left;
+    width: 33.16%;
+		border: 1px solid maroon;
+}
+#navbar ul li a {
+	font-size: 140%;
+    display: block;
+    text-align: center;
+    padding: 1em 1em 1em 1em;
+    text-decoration: none;
+    background-color: orange;
+    color: maroon;
+    font-weight: bold;
+}
+
+#navbar a:hover, #navbar a:focus {
+	color: red;
+	font-weight: bold;
+}
+
+
+
+/* section styles */
+
+section {
+	float: left;
+	width: 58.33%;
+	padding: 0 2em 1em 1em;
+
+}
+
+
+section h1 {
+	padding: 1em 0 0 0;
+	font-size: 200%;
+	border-bottom: 1px solid brown;
+
+}
+section #lunch {
+	padding-top: .5em;
+
+}
+
+section #breakfast {
+	padding-top: .5em;
+
+}
+
+section h2 {
+	font-size: 170%;
+	padding: .5em 0em;
+}
+
+section h3{
+	padding-bottom: .3em;
+	font-weight: bold;
+
+}
+
+section p {
+	line-height: 1.5em
+}
+
+section ul {
+	padding-left: 2.5em;
+	list-style-type: number;
+}
+
+
+section ul li {
+	padding: 1.5em 0;
+
+}
+
+
+/* aside styles */
+aside {
+	width: 29.16%;
+	float: right;
+	padding-left: 2em;
+
+}
+
+aside ul {
+	list-style-type: number;
+	padding-left: 3em;
+}
+
+aside h1 {
+	font-size: 220%;
+	padding-top: .3em;
+	border-bottom: 1px solid brown;
+	text-align: center;
+}
+
+
+
+aside h2 {
+	padding: 1.5em 0em .5em 0em;
+	color:maroon;
+}
+
+aside h2 a {
+	text-decoration: none;
+	color: maroon;
+}
+
+aside a:link, section a:visited {
+    color: maroon;
+}
+
+aside a:hover, aside a:focus {
+	color: brown;
+	font-style: italic;
+}
+
+/* footer styles */
+footer {
+	clear: both;
+	border-bottom: 1px solid brown;
+	border-radius: 15px;
+	padding: 1em 33em;
+	background-color: orange;
+}
+
+
+
+/* media screen */
+
+@media only screen and (max-width: 900px) {
+	body {
+		font-size: 90%;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#navbar {
+		display: none;
+	}
+
+    /* change background and decrease padding */
+    .slicknav_menu {
+      background: orange !important;
+	    padding: 3px !important;
+    }
+
+    #mobile_menu {
+		display: block;
+	}
+    #mobile_menu ul {
+        background-color: orange;
+    }
+    #mobile_menu a {
+        background-color: orange;
+				color: maroon;
+    }
+    #mobile_menu a:hover, #mobile_menu a:focus {
+        color: maroon;
+    }
+
+		header h2 {
+			font-size: 200%;
+		}
+		section {
+			float: none;
+					width: 93.3334%;
+		}
+		aside {
+			float: none;
+			width: 93.3334%;
+		  padding-top: 0;
+			padding-bottom: 1.5625em;
+		}
+}
+
+@media only screen and (max-width: 479px) {
+	header h2 {
+		font-size: 180%;
+	}
+	header h3 {
+		font-size: 115%;
+	}
+    section p {
+	    font-size: 95%;
+    }
+}
